@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECO-DESERT | Transformando residuos en recursos</title>
+  <meta name="description" content="ECO-DESERT: Soluciones medioambientales integrales para minería, agricultura y energías renovables en Chile. Planta de recepción y acopio en Vallenar, Región de Atacama.">
+  <meta name="keywords" content="ECO-DESERT, reciclaje industrial, residuos industriales, minería, agricultura, energías renovables, Vallenar, Atacama, economía circular, Ley REP">
+  <meta name="author" content="ECO-DESERT">
+
+  <!-- Open Graph / Redes Sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.eco-desert.com/">
+  <meta property="og:title" content="ECO-DESERT | Transformando residuos en recursos">
+  <meta property="og:description" content="Soluciones medioambientales para minería, agricultura y energías renovables. Planta en Vallenar, Región de Atacama.">
+  <meta property="og:image" content="images/inicio.png">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polygon points='50,5 90,27 90,73 50,95 10,73 10,27' fill='none' stroke='%232b571d' stroke-width='8'/><path d='M30,50 L45,65 L70,35' fill='none' stroke='%234fa033' stroke-width='8' stroke-linecap='round'/></svg>">
+
+  <!-- Fuentes Google: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="slides-page">
+
+  <!-- HEADER / NAVBAR SUPERIOR FIJO -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      
+      <a href="#slide-1" class="brand-logo" aria-label="ECO-DESERT Inicio">
+        <svg class="logo-icon" viewBox="0 0 40 40" width="34" height="34" fill="none">
+          <polygon points="20,4 36,13 36,27 20,36 4,27 4,13" stroke="currentColor" stroke-width="3" fill="none" stroke-linejoin="round"/>
+          <path d="M12 20L20 12L28 20L20 28Z" fill="currentColor" opacity="0.3"/>
+          <path d="M16 20L20 16L24 20L20 24Z" fill="currentColor"/>
+        </svg>
+        <span class="brand-name">ECO-DESERT</span>
+      </a>
+
+      <!-- Navegación de láminas -->
+      <nav class="desktop-nav" aria-label="Navegación por láminas">
+        <ul class="nav-list">
+          <li><a href="#slide-1" class="nav-link active" data-slide="1">01. Inicio</a></li>
+          <li><a href="#slide-2" class="nav-link" data-slide="2">02. Quiénes Somos</a></li>
+          <li><a href="#slide-3" class="nav-link" data-slide="3">03. Misión y Visión</a></li>
+          <li><a href="#slide-4" class="nav-link" data-slide="4">04. Propuesta de Valor</a></li>
+          <li><a href="#slide-5" class="nav-link" data-slide="5">05. Servicios</a></li>
+          <li><a href="#slide-6" class="nav-link" data-slide="6">06. Cobertura</a></li>
+          <li><a href="#slide-7" class="nav-link" data-slide="7">07. Soluciones</a></li>
+          <li><a href="#slide-8" class="nav-link" data-slide="8">08. Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-outline btn-fullscreen" id="fullscreenBtn" title="Pantalla completa" aria-label="Modo presentación pantalla completa">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+          </svg>
+          <span class="btn-text">Presentación</span>
+        </button>
+
+        <button class="btn btn-primary btn-contact-modal" id="openContactBtn">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>Contactar</span>
+        </button>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Menú Móvil Desplegable -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <ul class="mobile-nav-list">
+        <li><a href="#slide-1" class="mobile-nav-link">01. Inicio</a></li>
+        <li><a href="#slide-2" class="mobile-nav-link">02. ¿Quiénes Somos?</a></li>
+        <li><a href="#slide-3" class="mobile-nav-link">03. Misión y Visión</a></li>
+        <li><a href="#slide-4" class="mobile-nav-link">04. Propuesta de Valor</a></li>
+        <li><a href="#slide-5" class="mobile-nav-link">05. Nuestros Servicios</a></li>
+        <li><a href="#slide-6" class="mobile-nav-link">06. Industrias y Cobertura</a></li>
+        <li><a href="#slide-7" class="mobile-nav-link">07. Soluciones Ambientales</a></li>
+        <li><a href="#slide-8" class="mobile-nav-link">08. ¿Quieres saber más?</a></li>
+        <li><button class="btn btn-primary btn-block mobile-contact-btn" id="mobileContactBtn">Escribir Mensaje</button></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- INDICADORES LATERALES DE LÁMINA (DOTS) -->
+  <aside class="slide-indicator-nav" aria-label="Selector de láminas">
+    <a href="#slide-1" class="indicator-dot active" data-title="01. Inicio" aria-label="Ir a lámina 1"><span></span></a>
+    <a href="#slide-2" class="indicator-dot" data-title="02. Quiénes Somos" aria-label="Ir a lámina 2"><span></span></a>
+    <a href="#slide-3" class="indicator-dot" data-title="03. Misión y Visión" aria-label="Ir a lámina 3"><span></span></a>
+    <a href="#slide-4" class="indicator-dot" data-title="04. Propuesta de Valor" aria-label="Ir a lámina 4"><span></span></a>
+    <a href="#slide-5" class="indicator-dot" data-title="05. Servicios" aria-label="Ir a lámina 5"><span></span></a>
+    <a href="#slide-6" class="indicator-dot" data-title="06. Cobertura" aria-label="Ir a lámina 6"><span></span></a>
+    <a href="#slide-7" class="indicator-dot" data-title="07. Soluciones" aria-label="Ir a lámina 7"><span></span></a>
+    <a href="#slide-8" class="indicator-dot" data-title="08. Contacto" aria-label="Ir a lámina 8"><span></span></a>
+  </aside>
+
+  <!-- BOTONES FLOTANTES DE NAVEGACIÓN ANTERIOR / SIGUIENTE -->
+  <div class="floating-nav-controls">
+    <button class="nav-arrow-btn prev-btn" id="prevSlideBtn" aria-label="Lámina anterior" title="Lámina anterior (Flecha Arriba)">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+    <div class="current-slide-badge" id="slideBadge">1 / 8</div>
+    <button class="nav-arrow-btn next-btn" id="nextSlideBtn" aria-label="Lámina siguiente" title="Lámina siguiente (Flecha Abajo)">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+  </div>
+
+  <!-- BOTÓN FLOTANTE WHATSAPP -->
+  <a href="https://wa.me/56900000000?text=Hola%20ECO-DESERT,%20quisiera%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios" target="_blank" rel="noopener" class="floating-whatsapp" aria-label="Contactar por WhatsApp" title="Escríbenos por WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+    </svg>
+  </a>
+
+  <!-- CONTENEDOR PRINCIPAL DE LÁMINAS TAL CUAL -->
+  <main class="presentation-container" id="presentationContainer">
+
+    <!-- LÁMINA 1: INICIO -->
+    <section class="slide-section" id="slide-1" data-index="1">
+      <div class="slide-wrapper">
+        <img src="images/inicio.png" alt="Lámina 1: ECO-DESERT - Transformando residuos en recursos" class="slide-image" loading="eager">
+        
+        <!-- Enlaces interactivos superpuestos en la barra inferior de la lámina -->
+        <div class="hotspot-bar hotspot-inicio">
+          <a href="https://www.eco-desert.com" target="_blank" rel="noopener" class="hotspot-link" title="Visitar sitio web oficial">
+            <span class="sr-only">www.eco-desert.com</span>
+          </a>
+          <a href="https://instagram.com/ecodesert" target="_blank" rel="noopener" class="hotspot-link" title="Seguir en Instagram @ecodesert">
+            <span class="sr-only">@ecodesert</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- LÁMINA 2: ¿QUIÉNES SOMOS? -->
+    <section class="slide-section" id="slide-2" data-index="2">
+      <div class="slide-wrapper">
+        <img src="images/quienes_somos.png" alt="Lámina 2: ¿Quiénes Somos? Soluciones medioambientales para minería, agricultura y energías renovables" class="slide-image" loading="lazy">
+      </div>
+    </section>
+
+    <!-- LÁMINA 3: MISIÓN Y VISIÓN -->
+    <section class="slide-section" id="slide-3" data-index="3">
+      <div class="slide-wrapper">
+        <img src="images/mision_y_vision.png" alt="Lámina 3: Misión y Visión - Transformando residuos en recursos para una industria más sostenible e innovadora" class="slide-image" loading="lazy">
+      </div>
+    </section>
+
+    <!-- LÁMINA 4: NUESTRO ENFOQUE Y PROPUESTA DE VALOR -->
+    <section class="slide-section" id="slide-4" data-index="4">
+      <div class="slide-wrapper">
+        <img src="images/nuestro_enfoque_y_propuesta_de_valor.png" alt="Lámina 4: Nuestro Enfoque y Propuesta de Valor - Innovación constante, Gestión de calidad, Integridad en el negocio, Sostenibilidad" class="slide-image" loading="lazy">
+      </div>
+    </section>
+
+    <!-- LÁMINA 5: NUESTROS SERVICIOS -->
+    <section class="slide-section" id="slide-5" data-index="5">
+      <div class="slide-wrapper">
+        <img src="images/nuestros_servicios.png" alt="Lámina 5: Nuestros Servicios - Soluciones integrales para la industria sostenible" class="slide-image" loading="lazy">
+      </div>
+    </section>
+
+    <!-- LÁMINA 6: INDUSTRIAS Y COBERTURA -->
+    <section class="slide-section" id="slide-6" data-index="6">
+      <div class="slide-wrapper">
+        <img src="images/industria_y_cobertura.png" alt="Lámina 6: Industrias y Cobertura - Minería, Agricultura, Energías Renovables. Planta en Vallenar, Región de Atacama" class="slide-image" loading="lazy">
+      </div>
+    </section>
+
+    <!-- LÁMINA 7: SOLUCIONES AMBIENTALES -->
+    <section class="slide-section" id="slide-7" data-index="7">
+      <div class="slide-wrapper">
+        <img src="images/soluciones_ambientales.png" alt="Lámina 7: Soluciones ambientales para una industria más sostenible" class="slide-image" loading="lazy">
+        
+        <!-- Enlaces interactivos superpuestos en la barra inferior de la lámina -->
+        <div class="hotspot-bar hotspot-soluciones">
+          <a href="https://www.eco-desert.com" target="_blank" rel="noopener" class="hotspot-link" title="Visitar www.eco-desert.com">
+            <span class="sr-only">www.eco-desert.com</span>
+          </a>
+          <a href="mailto:contacto@eco-desert.com" class="hotspot-link" title="Enviar correo a contacto@eco-desert.com">
+            <span class="sr-only">contacto@eco-desert.com</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- LÁMINA 8: ¿QUIERES SABER MÁS? -->
+    <section class="slide-section" id="slide-8" data-index="8">
+      <div class="slide-wrapper">
+        <img src="images/quieres_saber_mas.png" alt="Lámina 8: ¿Quieres saber más? Visítanos en nuestra página web" class="slide-image" loading="lazy">
+        
+        <!-- Botón interactivo sobre 'Visítanos en nuestra página web' -->
+        <button class="hotspot-btn-center" id="hotspotContactBtn" title="Abrir formulario de contacto">
+          <span class="hotspot-pulse"></span>
+          <span class="hotspot-btn-label">Haz clic para contactar</span>
+        </button>
+
+        <!-- Enlaces interactivos superpuestos en la barra inferior -->
+        <div class="hotspot-bar hotspot-contacto">
+          <a href="https://www.eco-desert.com" target="_blank" rel="noopener" class="hotspot-link" title="www.eco-desert.com">
+            <span class="sr-only">www.eco-desert.com</span>
+          </a>
+          <a href="https://instagram.com/ecodesert" target="_blank" rel="noopener" class="hotspot-link" title="@ecodesert">
+            <span class="sr-only">@ecodesert</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA ELEGANTE -->
+  <footer class="slide-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <strong>ECO-DESERT</strong> · Planta en Vallenar, Región de Atacama, Chile · Transformando residuos en recursos
+      </div>
+      <div class="footer-links">
+        <a href="mailto:contacto@eco-desert.com">contacto@eco-desert.com</a>
+        <span>·</span>
+        <a href="https://www.eco-desert.com" target="_blank" rel="noopener">www.eco-desert.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL DE CONTACTO / COTIZACIÓN (FUNCIONAL) -->
+  <div class="contact-modal" id="contactModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="contact-modal-backdrop" id="modalBackdrop"></div>
+    <div class="contact-modal-dialog">
+      <div class="contact-modal-header">
+        <div>
+          <h3 class="modal-title">Contáctanos - ECO-DESERT</h3>
+          <p class="modal-subtitle">Soluciones medioambientales para minería, agricultura y energías renovables</p>
+        </div>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Cerrar modal">✕</button>
+      </div>
+
+      <div class="contact-modal-body">
+        <form id="contactForm" class="modal-form" novalidate>
+          <div class="form-group">
+            <label for="nombre">Nombre y Apellido *</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej: Valentina Morales" required>
+            <span class="field-error" id="nombreError"></span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="empresa">Empresa / Razón Social *</label>
+              <input type="text" id="empresa" name="empresa" placeholder="Ej: Minera del Norte S.A." required>
+              <span class="field-error" id="empresaError"></span>
+            </div>
+            <div class="form-group">
+              <label for="industria">Sector / Industria *</label>
+              <select id="industria" name="industria" required>
+                <option value="" disabled selected>Selecciona tu industria</option>
+                <option value="Minería">Minería</option>
+                <option value="Agricultura">Agricultura</option>
+                <option value="Energías Renovables">Energías Renovables</option>
+                <option value="Construcción">Construcción</option>
+                <option value="Otra">Otra Industria</option>
+              </select>
+              <span class="field-error" id="industriaError"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Correo Electrónico *</label>
+              <input type="email" id="email" name="email" placeholder="contacto@empresa.cl" required>
+              <span class="field-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono / WhatsApp</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="+56 9 1234 5678">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Detalle de Residuos o Consulta *</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Describe los residuos industriales, volumen estimado o requerimiento técnico..." required></textarea>
+            <span class="field-error" id="mensajeError"></span>
+          </div>
+
+          <div class="modal-form-actions">
+            <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+              <span>Enviar Mensaje</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </div>
+        </form>
+
+        <div class="form-success-box" id="formSuccess" style="display: none;">
+          <div class="success-icon">✓</div>
+          <h4>¡Mensaje Enviado con Éxito!</h4>
+          <p>Gracias por comunicarte con <strong>ECO-DESERT</strong>. Nuestro equipo de la Planta Vallenar revisará tu solicitud y se pondrá en contacto prontamente.</p>
+          <button type="button" class="btn btn-secondary" id="resetModalFormBtn">Enviar otra consulta</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
